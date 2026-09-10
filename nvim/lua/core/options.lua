@@ -16,3 +16,4 @@ vim.o.equalalways = false
 
 vim.g.mapleader = " "
 vim.opt.laststatus = 3
+vim.opt.statusline:append(" %{get(b:,'gitsigns_status','')}")

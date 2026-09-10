@@ -6,6 +6,12 @@ autoload -Uz +X compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 zstyle ':completion:*' menu select
 
+# Bind Alt + hjkl to cursor movement widgets
+bindkey '^[h' backward-char      # Alt+h -> Left
+bindkey '^[j' down-line-or-history # Alt+j -> Down
+bindkey '^[k' up-line-or-history   # Alt+k -> Up
+bindkey '^[l' forward-char     # Alt+l -> Right
+
 # Exports and Alias
 # History configurations
 HISTFILE=~/.zsh_history

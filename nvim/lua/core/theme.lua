@@ -1,5 +1,3 @@
-vim.cmd(":hi statusline guibg=NONE")
-
 require("vesper").setup({
     transparent = true,
     italics = {

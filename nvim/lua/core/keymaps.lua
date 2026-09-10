@@ -1,16 +1,22 @@
 -- formatting
 vim.keymap.set("n", "<C-s>", ":write<CR>")
+vim.keymap.set("n", "<C-q>", ":qa<CR>")
 vim.keymap.set("i", "<C-s>", "<Esc>:write<CR>")
 vim.keymap.set("n", "qq", ":quit<CR>")
 vim.keymap.set("n", "<leader>lf", vim.lsp.buf.format)
 vim.keymap.set("n", "<leader>r", ":restart<CR>")
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist)
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>', { silent = true })
 
 -- navigation
 vim.keymap.set("n", "<C-h>", "<cmd>TmuxNavigateLeft<CR>")
 vim.keymap.set("n", "<C-j>", "<cmd>TmuxNavigateDown<CR>")
 vim.keymap.set("n", "<C-k>", "<cmd>TmuxNavigateUp<CR>")
 vim.keymap.set("n", "<C-l>", "<cmd>TmuxNavigateRight<CR>")
+vim.keymap.set('i', '<A-h>', '<Left>')
+vim.keymap.set('i', '<A-j>', '<Down>')
+vim.keymap.set('i', '<A-k>', '<Up>')
+vim.keymap.set('i', '<A-l>', '<Right>')
 
 -- split windows
 vim.keymap.set("n", "<C-w>v", ":vsplit<CR>")

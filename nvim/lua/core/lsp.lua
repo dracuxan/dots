@@ -1,6 +1,6 @@
 local capabilities = require("blink.cmp").get_lsp_capabilities()
 
-vim.lsp.enable({ "lua_ls", "ols", "elixir-ls" })
+vim.lsp.enable({ "lua_ls", "ols", "elixir-ls", "clangd" })
 
 -- format on save
 local format_au_group = vim.api.nvim_create_augroup(

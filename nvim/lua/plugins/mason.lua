@@ -6,5 +6,6 @@ require("mason-tool-installer").setup({
         "ocaml-lsp",
         "elixir-ls",
         "ols",
+        "clangd",
     },
 })

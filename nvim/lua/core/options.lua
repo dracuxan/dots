@@ -15,3 +15,4 @@ vim.o.cmdheight = 0
 vim.o.equalalways = false
 
 vim.g.mapleader = " "
+vim.opt.laststatus = 3
